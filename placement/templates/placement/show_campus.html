@@ -1,0 +1,71 @@
+{% extends "placement/header.html" %}
+
+{% block content %}
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1000px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+<p>&nbsp;</p>
+<h2>About IIIT Allahabad ( Content in this is subject to change )</h2>
+
+<div class="row">
+  <div class="column">
+    <p>Center of Excellence in IT & Allied Areas. Established in 1999, as a Centre of Excellence in Information Technology and allied areas, the IIIT-A was conferred the Deemed University status by Govt. of India in the year 2000.</p>
+  </div>
+  <div class="column">
+    <img src="/static/placement/iiita_1.jpg" style="width:100%">
+  </div>
+</div>
+
+{% endblock %}

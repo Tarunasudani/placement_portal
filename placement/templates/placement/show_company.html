@@ -1,0 +1,57 @@
+{% extends "placement/header.html" %}
+
+{% block content %}
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 2px solid #FFFFFF;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+
+<p>&nbsp;</p>
+<h2>The following roles are available for you</h2>
+{% if user.is_authenticated %}
+<a href="{% url 'your_app'%}" >Click here to see your applied Applications</a>
+{% endif %}
+<article class="media content-section">
+    <div class="container info-boxes pt100 pb100">
+        <table>
+        <tr>
+            <th>Company</th>
+            <th>Job Profile</th>
+            <th>Location</th>
+            <th>Category</th>
+            <th>Application Status</th>
+        </tr>
+    {% for company in companies %}
+            <tr>
+                <th><a href="{% url 'show_description' company.id %}">{{company.company_name}}</a></th>
+                <th>{{company.job_profile}}</th>
+                <th>{{company.company_location}}</th>
+                <th>{{company.company_category}}</th>
+                {% if user.is_authenticated %}
+                  {% if company in applied_applications %}
+                    <th>Already Applied</th>
+                  {% else %}
+                    <th><a href="{% url 'apply_job' company.id %}">Apply</a> / <a href="{% url 'show_description' company.id %}">Details</a></th>
+                  {% endif %}
+                {% else %}
+                  <th><a href="{% url 'apply_job' company.id %}">Apply</a> / <a href="{% url 'show_description' company.id %}">Details</a></th>
+                {% endif %}
+            </tr>
+
+    {% endfor %}
+    </div>
+</article>
+{% endblock %}
