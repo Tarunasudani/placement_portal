@@ -1,17 +1,42 @@
 body {
-  background: #fafafa;
+
   color: #333333;
   margin-top: 5rem;
+
+  background-image: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url('/static/placement/landing_background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
   color: #1d2124;
+}
+
+a {
+    color: #184473;
+}
+
+h1 {
+    color: #1d2124;
+    margin-top : 5%;
+    margin-bottom : 5%;
+}
+
+.landingH1 {
+    text-align: center;
 }
 
 ul {
   margin: 0;
 }
 
+.landing-image {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2.5%;
+    padding-top: 2.5%;
+}
 
 
 .site-header .navbar-nav .nav-link {
