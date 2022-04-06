@@ -1,9 +1,3 @@
-/**
-* Template Name: eStartup - v4.7.1
-* Template URL: https://bootstrapmade.com/estartup-bootstrap-landing-page-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # General
@@ -11,6 +5,7 @@
 body {
   background-color: #fff;
   color: #333;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -40,7 +35,7 @@ h5 {
 a {
   letter-spacing: 2px;
   text-decoration: none;
-  color: #71c55d;
+  color: #DADDFC;
 }
 a:hover {
   color: #92d283;
@@ -133,25 +128,28 @@ span {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: #fff;
+  background: #2E4C6D;;
   z-index: 997;
   transition: all 0.5s ease;
-  padding: 20px 0;
+  padding: 10px 0;
+  padding-left: 10px;
+  margin-left: 100px;
+  height:70px;
 }
 #header #logo h1 {
-  color: #505050;
+  color: white;
   font-size: 28px;
   font-weight: 600;
   letter-spacing: 1px;
-  margin: 0;
+  margin: 20px;
 }
 #header #logo h1 a {
-  color: #555;
+  color: white;
   display: inline-block;
   text-decoration: none;
 }
 #header #logo h1 a span {
-  color: #71c55d;
+  color: white;
 }
 #header #logo img {
   padding: 0;
@@ -169,15 +167,26 @@ span {
 /**
 * Desktop Navigation 
 */
+.bgbg {
+  background-image: url('index_cover.jpg');
+  /* background: rgba(0, 0, 0, 0.5); */
+}
+#bg1{
+  background: rgba(0, 0, 0, 0.5);
+  /* background-color: whitesmoke; */
+}
 .navbar {
   padding: 0;
+  
+  /* background-image: url('index_cover.jpg'); */
 }
 .navbar ul {
+
   margin: 0;
-  padding: 0;
+  /* padding: 10px; */
   display: flex;
   list-style: none;
-  align-items: center;
+  /* align-items: center; */
 }
 .navbar li {
   position: relative;
@@ -189,7 +198,7 @@ span {
   padding: 10px 0 10px 30px;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
-  color: #222;
+  color: white;
   white-space: nowrap;
   transition: 0.3s;
   letter-spacing: 0;
@@ -200,7 +209,7 @@ span {
   margin-left: 5px;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #71c55d;
+  color: white;
 }
 .navbar .dropdown ul {
   display: block;
@@ -228,7 +237,7 @@ span {
   font-size: 12px;
 }
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #71c55d;
+  color: white;
 }
 .navbar .dropdown:hover > ul {
   opacity: 1;
@@ -259,7 +268,7 @@ span {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #222;
+  color: white;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -311,7 +320,7 @@ span {
 .navbar-mobile a, .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #222;
+  color: white;
 }
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
   color: #71c55d;
@@ -353,11 +362,10 @@ span {
   width: 100%;
   height: 100%;
   /* calc(100vh - 40px); */
-  background: url(../img/hero-bg.png) center bottom no-repeat;
+
   background-size: 100%;
   position: relative;
   margin-top: 40px;
-  margin-bottom: 40px;
 }
 @media (min-width: 1025px) {
   #hero {
@@ -387,21 +395,22 @@ span {
   text-align: center;
 }
 #hero h1 {
-  margin: 0 0 10px 0;
+  margin: 0 0 0 0;
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
   font-family: "Philosopher", sans-serif;
-  color: #71c55d;
+  color: #DADDFC;
 }
 @media (max-width: 768px) {
   #hero h1 {
     font-size: 28px;
     line-height: 36px;
+    margin-top: 100px;
   }
 }
 #hero h2 {
-  color: #777;
+  color: rgb(247, 238, 238);
   margin-bottom: 30px;
   font-size: 20px;
   font-family: "Roboto", sans-serif;
@@ -1309,4 +1318,72 @@ section {
 .footer .copyrights p a, .footer .copyrights .credits a {
   letter-spacing: 0;
   color: #71c55d;
+}
+
+.mat-app-background {
+  background-color: #fafafa;
+  color: rgba(0,0,0,.87);
+}
+
+.hii {
+  color: red;
+  width: 10cm;
+  border: 15px solid green;
+}
+
+#align_temp_right{
+  align-items: flex-end;
+}
+
+.left_box {
+  background-color: #F0E9D2;
+  border: 2px #396EB0;
+  height: 100px;
+  padding: 10px 10px 10px 10px;
+  padding: 12px 0px 12px 12px; 
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.why_iiita {
+  background-color: #002366;
+  border: 2px #396EB0;
+  height: 300px;
+  padding: 10px 10px 10px 10px;
+  padding: 12px 0px 12px 12px; 
+  border-radius: 5px;
+  margin: 10px;
+  color: white;
+}
+.pink_box {
+  background-color: #002366;
+  border: 2px #396EB0;
+  height: 100px;
+  border-radius: 5px;
+}
+#second_box {
+  margin-top: 20px;
+}
+
+.temp{
+  align-items: center;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#contact{
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 28px;
+  font-style: bold;
+  color: #2E4C6D;
+}
+
+#contact_container{
+  margin-top: 20px;
+
 }
