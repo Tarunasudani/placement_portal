@@ -133,7 +133,6 @@ span {
   transition: all 0.5s ease;
   padding: 10px 0;
   padding-left: 10px;
-  margin-left: 100px;
   height:70px;
 }
 #header #logo h1 {
@@ -186,8 +185,6 @@ span {
   /* padding: 10px; */
   display: flex;
   list-style: none;
-  float: right;
-  align-items: right;
 }
 .navbar li {
   position: relative;

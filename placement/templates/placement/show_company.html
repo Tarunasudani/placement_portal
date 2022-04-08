@@ -13,14 +13,18 @@ td, th {
   text-align: left;
   padding: 8px;
 }
-
+#titles {
+  font-size: 20px;
+  text-align: center;
+  color: #2E4C6D;
+}
 tr:nth-child(even) {
   background-color: #dddddd;
 }
 </style>
 
 <p>&nbsp;</p>
-<h2>The following roles are available for you</h2>
+<h2>Available Roles</h2>
 {% if user.is_authenticated %}
 <a href="{% url 'your_app'%}" >Click here to see your applied Applications</a>
 {% endif %}
@@ -28,11 +32,11 @@ tr:nth-child(even) {
     <div class="container info-boxes pt100 pb100">
         <table>
         <tr>
-            <th>Company</th>
-            <th>Job Profile</th>
-            <th>Location</th>
-            <th>Category</th>
-            <th>Application Status</th>
+          <th id = "titles">Company</th>
+            <th id = "titles">Job Profile</th>
+            <th id = "titles">Location</th>
+            <th id = "titles">Category</th>
+            <th id = "titles">Application Status</th>
         </tr>
     {% for company in companies %}
             <tr>
