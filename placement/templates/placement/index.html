@@ -3,7 +3,7 @@
 
 {% block content %}
 
-
+<script src="{% static 'fontawesomefree/js/all.min.js' %}"></script>
       <section id="hero" >
         <div class="bgbg">
         <div data-aos="fade-in" id="bg1">
@@ -14,6 +14,28 @@
          
           <h2>Official website for internships & placements in IIITA</h2>
           <h2> In a short span of 22 years IIIT Allahabad has established itself as one of the most sought after destination for aspiring technologists all over India. </h2>
+          <!-- <input type="image" name="submit" width="100" height="100" alt="submit" id ="login_button_student"/>
+          <input type="image" src="/static/placement/company.png" name="submit" width="100" height="100" alt="submit" id ="login_buttons"/>   
+          <input type="image" src="/static/placement/admin_login.png" name="submit" width="100" height="100" alt="submit" id ="login_buttons"/>   -->
+        <div class="container" id="align_center">
+          <div class="row">
+          <div class="button-outer">
+            <button class="button_student" href=" {{ login_url }}">
+              Student
+            </button>
+          </div>
+          <div class="button-outer">
+            <button class="button_recruiter" href=" {{ login_url }}">
+              Recruiter
+            </button>
+          </div>
+          <div class="button-outer">
+            <button class="button_team" href=" {{ login_url }}">
+              Coordinator
+            </button>
+          </div>
+          </div>
+        </div>
           <!-- <a href="#get-started" class="btn-get-started scrollto">Get Started</a> -->
         </div>
         </div>
@@ -34,25 +56,67 @@
     <div class="col-md-4">
       <div class="row-md-4">
         <div class="left_box">
-          hhii
+          <div id="sub_title"> About IIITA </div>
+          Established in 1999 as an Institute of National Importance to be a centre of excellence in Information Technology, Electronics & Communications and allied areas, Indian Institute of Information Technology, Allahabad (IIIT Allahabad) was conferred the Deemed University status by Govt. of India in the year 2000.
         </div>
       </div>
       <div class="row-md-4">
         <div class="left_box">
-          hhii
+          <div id="sub_title"> Courses Offered </div>
+          IIIT Allahabad, a premier engineering institute that drives technologists with its multiple courses in undergraduate and postgraduate programme.
+          Currently, it thrives in its department of Information Technology, Electronics & Communications and Management.
+          <button id="myBtn">Read More</button>
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p>Undergraduate Courses
+                B. Tech. Information Technology (IT)
+                B. Tech. Electronics and Communication Engineering (ECE)
+                This course is arguably the best in the country. Its strength is its adaptability to the changing industry requirements. A student gets knowledge of the latest technologies, in addition to ample industry exposure. The students are given a choice of subject from the 6th semester itself in the form of electives. The students have ample practical knowledge owing to the mini projects taken up in their 5th, 6th and 7th semesters. Apart from this, the students are required to submit an industrial project in their 8th semester. The course includes both theory and lab sessions. The curriculum emphasizes importance of applied knowledge, and promotes state-of-the-art teaching and learning.
+                Dual Degree Courses
+                B. Tech. Information Technology (IT) and M. Tech. Information Techonology (IT) with specialization in Software Engineering
+                B. Tech. Information Technology (IT) and M. Tech. Information Techonology (IT) with specialization in Robotics
+                Dual Degree courses are the perfect amalgamation of the most established and renowned courses of IIIT Allahabad, namely the Bachelors in Information Technology and Masters(with specialization in Robotics and Software Engineering). These courses aims to prepare the students to easily adapt to the ever evolving field of Information Technology and cultivate in them a keen interest for working with the latest technologies and a penchant for research and development as well. The students have been given excellent exposure to both practical applications as well as core research aspects both of which are the trademarks of IIIT Allahabad legacy for the respective courses. The curriculum emphasizes originality of thought and ideas and an ability to successfully develop and practically bring the ideas into use.
+                Postgraduate Courses
+                Wireless Communication Engineering (WCE)
+                Software Engineering (SE)
+                Cyber Law and Information Security (CLIS)
+                Intelligent Systems (IS)
+                Robotics (RO)
+                Human Computer Interaction (HC)
+                Microelectronics(ME)
+                Bioinformatics (BI)
+                Integrated M. Tech in Biomedical Engineering. (BME)
+                MBA
+                IIIT Allahabad provides excellence of specialization in the field of information technology in India. The objective of M.Tech is to prepare quality professionals to work at high-end technologies in IT and to deliver future project leaders and architects, who can meet the challenges, make better use of technologies and understand the need of modern IT services. Here students are trained to work in a team, lead it, allowing exposure to the practicability and difficulties involved in the projects of varying complexities to make sure that the students have the capability to turn the dreams of business leaders and visionaries into realities.The curriculum is designed in such a manner that student get the excellent knowledge of the specialized field. 'Thesis work' which provides an opportunity to students to create and develop new concept, techniques, methods and applications in the real world.</p>
+            </div>
+          
+          </div>
+
         </div>
       </div>
     </div>
     <div class="col-md-4">
-      <h3>Column 2</h3>
-      <div class="left_box">
-        hhii
+      <div class="center_box">
+        <div id="sub_title"> Placement: 2021-22  </div>
+        <p id="stats">
+          Total Number of students: 328
+        </p>
+<p id="stats"> Students placed: 328</p>
+<p id="stats"> Percentage of students placed: 100%</p>
+<p id="stats"> Number of Companies Visited: 226 </p>
+<p id="stats"> Number of offers made: 354</p>
+
+<p id="stats"> Highest Offer: 67.62L</p>
+<p id="stats"> Median Offer: 26.05L</p>
+<p id="stats"> Average Offer: 29.24L</p>
       </div>
     </div>
     <div class="col-md-4">
-      <h3>Column 3</h3>
       <div class="left_box">
-        hhii
+       hii
       </div>
     </div>
   </div>
@@ -68,26 +132,32 @@
       <div class="col-md-12">
         <div class="why_iiita">
           <div class="row">
+            <div class="col-md-4">
+              <button class="button_best" href=" {{ login_url }}">
+              </button>
+              <div id="sub_title_1">  Nation's Best Talent</div>
+              <div id="content_1"> 
+                The students of B.Tech.(IT and ECE) are admitted through JEE and represents the top 0.5% of the candidates that appear for the exam nation-wide. This creamy layer of students possess excellent analytical skills, have a thirst for knowledge and are quick learners.</div>
+             </div>
+                <div class="col-md-4">
+                <button class="button_curriculum" href=" {{ login_url }}">
+                </button>
+                <div id="sub_title_1"> World Class Curriculum</div>
+                <div id="content_1"> 
+                  The academic curriculum of the institute is one of the best in our country and is designed by academicians and industry experts keeping in mind the dynamically changing world of technology.
+                </div>
+ 
+               </div>
               <div class="col-md-4">
-               <h2> ALUMNI</h2>
-               <h3> Alumni all over the globe</h3>
-
-
+                       
+            <button class="button_star" href=" {{ login_url }}">
+            </button>
+            <div id="sub_title_1"> Alumni </div>
+            <div id="content_1"> The alumni of our institute have gone on to become the leaders in their fields and are doing excellent work, both by contributing to their organization’s development and creating their own start-ups. Our Alumni are actively engaged with the institute and the students, motivating them to perform and excel at whatever they do.</div>
               </div>
-              <div class="col-md-4">
-                <h2> ALUMNI</h2>
-                <h3> Alumni all over the globe</h3>
- 
- 
- 
-               </div>
-               <div class="col-md-4">
-                <h2> ALUMNI</h2>
-                <h3> Alumni all over the globe</h3>
- 
- 
- 
-               </div>
+              
+           
+
               </div>
               </div>
         </div>
@@ -107,7 +177,19 @@
     <div class="col-md-6">
       <div class="left_box">
         <h3> TRAINING & PLACEMENT OFFICER</h3>
-        <h4> Mr. ABCDF DJJDJDJ</h5>
+        <p> Faculty In-charge, Training and Placements </p>
+        <div class="email">
+          <i class="bi bi-envelope"></i>
+          <p>info@example.com</p>
+        </div>
+tpo@iiita.ac.in
+placements@iiita.ac.in
++91-8109228418
+(Only for Recruiters)
+
+Dr. Muneendra Ojha
+FIC - Training and Placements
++91-98993 64673
       </div>
     </div>
     <div class="col-md-6">
@@ -130,5 +212,31 @@
 
   <!-- Template Main JS File -->
   <link rel="javascript" type="js" src="{% static 'placement/js/main.js' %}"></link>
+  <script>
+    var modal = document.getElementById("myModal");
+  
+  // Get the button that opens the modal
+  var btn = document.getElementById("myBtn");
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks on the button, open the modal
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
 {% endblock %}
 

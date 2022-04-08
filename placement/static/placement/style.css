@@ -1,4 +1,4 @@
-
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -35,7 +35,7 @@ h5 {
 a {
   letter-spacing: 2px;
   text-decoration: none;
-  color: #DADDFC;
+  color: #2b349a;
 }
 a:hover {
   color: #92d283;
@@ -182,20 +182,21 @@ span {
 }
 .navbar ul {
 
-  margin: 0;
+  margin-left: 600px;
   /* padding: 10px; */
   display: flex;
   list-style: none;
-  /* align-items: center; */
+  float: right;
+  align-items: right;
 }
 .navbar li {
   position: relative;
 }
 .navbar a, .navbar a:focus {
   display: flex;
-  align-items: center;
+  align-items: right;
   justify-content: space-between;
-  padding: 10px 0 10px 30px;
+  padding: 20px 10px 10px 30px;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   color: white;
@@ -1276,7 +1277,6 @@ section {
 .footer .footer-logo .navbar-brand {
   color: #fff;
   display: inline-block;
-  float: none;
   font-family: "Philosopher", sans-serif;
   font-size: 24px;
   font-weight: 500;
@@ -1338,19 +1338,30 @@ section {
 .left_box {
   background-color: #F0E9D2;
   border: 2px #396EB0;
-  height: 100px;
+  height: 200px;
+  padding: 10px 10px 10px 10px;
+  padding: 12px 12px 12px 12px; 
+  border-radius: 5px;
+  margin: 10px;
+  text-align: center;
+}
+.center_box{
+  background-color: #afbfda;
+  border: 2px #396EB0;
+  height: 360px;
   padding: 10px 10px 10px 10px;
   padding: 12px 0px 12px 12px; 
   border-radius: 5px;
   margin: 10px;
+  margin-top: 35px;
+  text-align: center;
 }
-
 .why_iiita {
   background-color: #002366;
   border: 2px #396EB0;
   height: 300px;
   padding: 10px 10px 10px 10px;
-  padding: 12px 0px 12px 12px; 
+  padding: 12px 12px 12px 12px; 
   border-radius: 5px;
   margin: 10px;
   color: white;
@@ -1386,4 +1397,236 @@ section {
 #contact_container{
   margin-top: 20px;
 
+}
+
+#login_button_student {
+  background-image: url('students-cap.png');
+  background-color: rgb(220, 210, 210);
+  width: 100px;
+  height: 100px;
+}
+#login_buttons {
+  background-image: url('company.png');
+  background-color: rgb(220, 210, 210);
+  width: 100px;
+  height: 100px;
+}
+
+.button_student {
+  font-size: 25px;
+  padding: 10px 20px;
+  background: #416d9b;
+  border: unset;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 2px #000;
+  outline: 0;
+  position: relative;
+  margin: 10px;
+  align-items: center;
+  
+}
+.button_student:before{
+  content: "\f19d";
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.button_recruiter{
+  font-size: 25px;
+  padding: 10px 20px;
+  background: #416d9b;
+  border: unset;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 2px #000;
+  outline: 0;
+  position: relative;
+  margin: 10px;
+  align-items: center;
+} 
+.button_recruiter:before{
+  content: "\f0b1";
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.button_team{
+  font-size: 25px;
+  padding: 10px 20px;
+  background: #416d9b;
+  border: unset;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 2px #000;
+  outline: 0;
+  position: relative;
+  margin: 10px;
+  align-items: center;
+} 
+.button_team:before{
+  content: "\f0c0";
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#align_center {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+#sub_title {
+  color: black;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 10px;
+}
+#sub_title_1 {
+  color: wheat;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 10px;
+  text-align: center;
+}
+#content_1{
+  color: whitesmoke;
+  font-size: 18px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+#stats {
+  font-size: 20px;
+  margin-bottom: -5px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: left;
+}
+
+.star{
+  content: "\f005";
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.button_star{
+  font-size: 50px;
+  background: #002366;
+  border: unset;
+  color: #fff;
+  cursor: pointer;
+  /* box-shadow: 0 0 2px #000; */
+  outline: 0;
+  position: relative;
+  align-items: center;
+  margin-left: 220px;
+  /* margin-top: -40px; */
+} 
+.button_star:before{
+  content: "\f005";
+  display: inline-block;
+  font: normal normal normal 54px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.button_curriculum{
+  font-size: 50px;
+  background: #002366;
+  border: unset;
+  color: #fff;
+  cursor: pointer;
+  /* box-shadow: 0 0 2px #000; */
+  outline: 0;
+  position: relative;
+  align-items: center;
+  margin-left: 220px;
+  /* margin-top: -40px; */
+} 
+.button_curriculum:before{
+  content: "\f19d";
+  display: inline-block;
+  font: normal normal normal 54px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.button_best{
+  font-size: 50px;
+  background: #002366;
+  border: unset;
+  color: #fff;
+  cursor: pointer;
+  /* box-shadow: 0 0 2px #000; */
+  outline: 0;
+  position: relative;
+  align-items: center;
+  margin-left: 220px;
+  /* margin-top: -40px; */
+} 
+.button_best:before{
+  content: "\f091";
+  display: inline-block;
+  font: normal normal normal 54px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

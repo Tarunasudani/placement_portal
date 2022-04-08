@@ -10,6 +10,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="{% static 'fontawesomefree/js/all.min.js' %}"></script>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -108,15 +109,16 @@
             <li>
                 <a href="{{ job_offers_url }}" class="{% if request.path == job_offers_url %} active {% endif%}">Job Offers</a>
             </li>
-            <li>
-                <a href="{{ logout_url }}" class="{% if request.path == logout_url %} active {% endif%}">Logout</a>
-            </li>
+            
             <li>
                 <a href="{{ profile_url }}" class="{% if request.path == profile_url %} active {% endif%}">My Profile</a>
 
             </li>        
             <li>
                 <a href="/show_campus/" class="{% if request.path == '/show_campus/' %} active {% endif%}">Show Campus</a>
+            </li>
+            <li>
+                <a href="{{ logout_url }}" class="{% if request.path == logout_url %} active {% endif%}">Logout</a>
             </li>
         {% else %}
             <li><a href="{{ register_url }}" class="{% if request.path == register_url %} active {% endif%}">Register</a></li>
