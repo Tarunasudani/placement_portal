@@ -104,8 +104,7 @@
     <nav id="navbar" class="navbar">
         <ul>
         <li><a class="{% if request.path == '/' %} active {% endif%}" href="/">Home</a></li>
-        <li><a  class="{% if request.path == '/announcement/' %} active {% endif %}" href="/announcement/">Announcements</a></li>    
-        <li><a  class="{% if request.path == '/show_company/' %} active {% endif %}" href="/show_company/">Open roles</a></li>
+        
         {% if user.is_authenticated %}
             <li>
                 <a href="{{ job_offers_url }}" class="{% if request.path == job_offers_url %} active {% endif%}">Job Offers</a>
@@ -126,6 +125,8 @@
             <li><a href=" {{ login_url }}" class="{% if request.path == login_url %} active {% endif%}">Login</a></li>
             <li><a href="/show_campus/" class="{% if request.path == '/show_campus/' %} active {% endif%}">About</a></li>
         {% endif %}
+        <li><a  class="{% if request.path == '/announcement/' %} active {% endif %}" href="/announcement/">Announcements</a></li>    
+        <li><a  class="{% if request.path == '/show_company/' %} active {% endif %}" href="/show_company/">Open roles</a></li>
     </ul>
     </nav>
 </div>

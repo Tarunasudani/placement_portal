@@ -1656,3 +1656,25 @@ section {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+#forms{
+  margin-top: 20px;
+}
+
+.button_login{
+  font-size: 15px;
+  padding: 10px 20px;
+  background: #416d9b;
+  border: unset;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 2px #000;
+  outline: 0;
+  position: relative;
+  margin: 10px;
+  float: right;
+}
+
+.space{
+  margin-top: 100px;
+}

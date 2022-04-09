@@ -1,23 +1,32 @@
 {% extends "placement/header.html" %}
 {% load crispy_forms_tags %}
 {% block content %}
+<div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+<div class="container" id="forms">
     <div class="content-section">
         <form method="POST">
             {% csrf_token %}
             <fieldset class="form-group">
+              
                 <legend class="border-bottom mb-4">Register for your campus placement</legend>
                 {{ form|crispy }}
             </fieldset>
             <div class="form-group">
-                <button class="btn btn-outline-info" type="submit">Sign Up</button>
+                <button type="submit" class="button_login">Sign Up</button>
             </div>
         </form>
+        <div class="space">
+            
+        </div>
         <div class="border-top pt-3">
             <small class="text-muted">
                 Already Have An Account? <a class="ml-2" href="{% url 'login' %}">Sign In</a>
             </small>
         </div>
     </div>
+        </div>
+    </div>
+</div>
 {% endblock content %}
 {% block javascript %}
 <script>
