@@ -184,6 +184,7 @@ span {
   margin-left: 600px;
   /* padding: 10px; */
   display: flex;
+  float: right;
   list-style: none;
 }
 .navbar li {
@@ -1677,4 +1678,34 @@ section {
 
 .space{
   margin-top: 100px;
+}
+
+.content_courses{
+  font-size: 15px;
+  font-family:'Times New Roman', Times, serif;
+  color:  #416d9b;
+  font-weight: 200;
+  text-align: left;
+}
+
+.details {
+  font-size: 18px;
+  font-family:'Times New Roman', Times, serif;
+  color:  #416d9b;
+  font-weight: 200;
+  text-align: center;
+}
+
+.button_read_more {
+  font-size: 15px;
+  padding: 5px 10px;
+  background: #416d9b;
+  border: unset;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 2px #000;
+  outline: 0;
+  position: relative;
+  margin: 10px;
+  border-radius: 10px;
 }

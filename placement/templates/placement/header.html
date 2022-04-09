@@ -102,6 +102,8 @@
     </div>
     <!-- <div class="col-lg-3"> -->
     <nav id="navbar" class="navbar">
+        <div class="col-lg-9"></div>
+        <div class="col-lg-3">
         <ul>
         <li><a class="{% if request.path == '/' %} active {% endif%}" href="/">Home</a></li>
         
@@ -117,6 +119,8 @@
             <li>
                 <a href="/show_campus/" class="{% if request.path == '/show_campus/' %} active {% endif%}">Show Campus</a>
             </li>
+            <li><a  class="{% if request.path == '/announcement/' %} active {% endif %}" href="/announcement/">Announcements</a></li>    
+            <li><a  class="{% if request.path == '/show_company/' %} active {% endif %}" href="/show_company/">Open roles</a></li>
             <li>
                 <a href="{{ logout_url }}" class="{% if request.path == logout_url %} active {% endif%}">Logout</a>
             </li>
@@ -125,9 +129,9 @@
             <li><a href=" {{ login_url }}" class="{% if request.path == login_url %} active {% endif%}">Login</a></li>
             <li><a href="/show_campus/" class="{% if request.path == '/show_campus/' %} active {% endif%}">About</a></li>
         {% endif %}
-        <li><a  class="{% if request.path == '/announcement/' %} active {% endif %}" href="/announcement/">Announcements</a></li>    
-        <li><a  class="{% if request.path == '/show_company/' %} active {% endif %}" href="/show_company/">Open roles</a></li>
+        
     </ul>
+</div>
     </nav>
 </div>
 <!-- </div> -->
