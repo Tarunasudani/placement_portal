@@ -38,7 +38,7 @@ a {
   color: #2b349a;
 }
 a:hover {
-  color: #92d283;
+  color: blue;
 }
 
 ul {
@@ -1620,6 +1620,35 @@ section {
 } 
 .button_best:before{
   content: "\f091";
+  display: inline-block;
+  font: normal normal normal 54px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.link_brochure{
+  font-size: 20px;
+  float: left;
+  padding: 5px;
+}
+
+.button_download{
+  font-size: 30px;
+  border: unset;
+  color: #002366;
+  cursor: pointer;
+  /* box-shadow: 0 0 2px #000; */
+  outline: 0;
+  position: relative;
+  align-items: center;
+  padding: 2px;
+  margin-right: 5px;
+} 
+.button_download:before{
+  content: "\f0ed";
   display: inline-block;
   font: normal normal normal 54px/1 FontAwesome;
   font-size: inherit;
