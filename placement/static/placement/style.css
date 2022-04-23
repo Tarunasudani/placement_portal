@@ -140,7 +140,7 @@ span {
   font-size: 28px;
   font-weight: 600;
   letter-spacing: 1px;
-  margin: 20px;
+  margin-left: 20px;
 }
 #header #logo h1 a {
   color: white;
@@ -181,7 +181,7 @@ span {
 }
 .navbar ul {
 
-  margin-left: 600px;
+  /* margin-left: 600px; */
   /* padding: 10px; */
   display: flex;
   float: right;
@@ -1336,7 +1336,7 @@ section {
 .left_box {
   background-color: #F0E9D2;
   border: 2px #396EB0;
-  height: 200px;
+  height: 250px;
   padding: 10px 10px 10px 10px;
   padding: 12px 12px 12px 12px; 
   border-radius: 5px;
