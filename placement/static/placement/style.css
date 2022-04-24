@@ -1343,6 +1343,15 @@ section {
   margin: 10px;
   text-align: center;
 }
+.contact_box {
+  background-color: #F0E9D2;
+  border: 2px #396EB0;
+  padding: 10px 10px 10px 10px;
+  padding: 12px 12px 12px 12px; 
+  border-radius: 5px;
+  margin: 10px;
+  text-align: center;
+}
 .center_box{
   background-color: #afbfda;
   border: 2px #396EB0;
@@ -1498,6 +1507,15 @@ section {
   font-family: Georgia, 'Times New Roman', Times, serif;
   margin-bottom: 10px;
   text-align: center;
+  margin-top: 15%;
+}
+#sub_title_2 {
+  color: #002366;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 10px;
+  text-align: center;
+  margin-top: 15%;
 }
 #content_1{
   color: whitesmoke;
@@ -1505,6 +1523,13 @@ section {
   font-family: Georgia, 'Times New Roman', Times, serif;
   margin-bottom: 10px;
   text-align: center;
+}
+#content_2{
+  color: black;
+  font-size: 18px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 10px;
+  text-align:justify;
 }
 .modal {
   display: none; /* Hidden by default */
@@ -1569,10 +1594,12 @@ section {
   cursor: pointer;
   /* box-shadow: 0 0 2px #000; */
   outline: 0;
-  position: relative;
-  align-items: center;
-  margin-left: 220px;
-  /* margin-top: -40px; */
+  margin: 0;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 } 
 .button_star:before{
   content: "\f005";
@@ -1592,10 +1619,12 @@ section {
   cursor: pointer;
   /* box-shadow: 0 0 2px #000; */
   outline: 0;
-  position: relative;
-  align-items: center;
-  margin-left: 220px;
-  /* margin-top: -40px; */
+  margin: 0;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 } 
 .button_curriculum:before{
   content: "\f19d";
@@ -1614,9 +1643,12 @@ section {
   cursor: pointer;
   /* box-shadow: 0 0 2px #000; */
   outline: 0;
-  position: relative;
-  align-items: center;
-  margin-left: 220px;
+  margin: 0;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   /* margin-top: -40px; */
 } 
 .button_best:before{
@@ -1708,4 +1740,56 @@ section {
   position: relative;
   margin: 10px;
   border-radius: 10px;
+}
+.button_update {
+  font-size: 30px;
+  padding: 5px 10px;
+  background: #416d9b;
+  border: unset;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 2px #000;
+  outline: 0;
+  position: relative;
+  margin: 10px;
+  border-radius: 10px;
+  left: 50%;
+}
+.button_card {
+  font-size: 20px;
+  padding: 5px 5px 5px 5px;
+  background: #416d9b;
+  border: unset;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 2px #000;
+  outline: 0;
+  position: relative;
+  margin: 10px;
+  border-radius: 10px;
+  top: 50%;
+}
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  margin-top: 30px;
+  padding: 10px 10px;
+  max-width: 1200px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+
+.poc-images{
+border-radius: 20%;
+height: 300px;
 }

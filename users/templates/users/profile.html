@@ -6,17 +6,24 @@
   	padding-bottom: 10px;
 	}
 </style>
-    <div class="content-section">
-      <div class="media">
-        <img class="rounded-circle account-img" src="{{ user.profile.image.url }}">
-        <div class="media-body">
-          <h2 class="account-heading">{{ user.username }}</h2>
-          <p class="text-secondary">{{ user.email }}</p>
-            <div class="stu"><a onclick="myFunction()" href="" id="goto">Delete Account</a></div>
+<div class="card">
+  <div class="container-md">
+    <div class="row">
+  <div class="col-md-4">
+  <img class="rounded-circle account-img" src="{{ user.profile.image.url }}" height="100px">
+</div>
+<div class="col-md-4">
+  <h2 class="account-heading">{{ user.username }}</h2>
+  <p class="text-secondary">{{ user.email }}</p>
+  </div>
+  <div class="col-md-4">
+    <div class="stu"><a onclick="myFunction()" href="" id="goto" class="button_card">Delete Account</a></div>
 
-            <h6><a href="{% url 'your_app'%}" >Your Applications</a></h6>
-        </div>
-      </div>
+            <h6><a href="{% url 'your_app'%}" class="button_card" >Your Applications</a></h6>
+    </div>
+</div>
+</div>
+
       <form method="POST" enctype="multipart/form-data">
           {% csrf_token %}
           <fieldset class="form-group">
@@ -26,7 +33,7 @@
               {{ v_form|crispy }}
           </fieldset>
           <div class="form-group">
-              <button class="btn btn-outline-info" type="submit">Update</button>
+              <button class="button_update" type="submit">Update</button>
           </div>
       </form>
     </div>
