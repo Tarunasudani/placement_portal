@@ -121,6 +121,9 @@
             </li>
             <li><a  class="{% if request.path == '/announcement/' %} active {% endif %}" href="/announcement/">Announcements</a></li>    
             <li><a  class="{% if request.path == '/show_company/' %} active {% endif %}" href="/show_company/">Open roles</a></li>
+            {% if request.user.is_superuser %}
+            <li><a  class="{% if request.path == job_offers_url %} active {% endif%}" href="">Form</a></li>
+            {%endif%}
             <li>
                 <a href="{{ logout_url }}" class="{% if request.path == logout_url %} active {% endif%}">Logout</a>
             </li>
