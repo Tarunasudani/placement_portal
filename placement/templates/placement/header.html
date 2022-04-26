@@ -116,14 +116,18 @@
                 <li>
                     <a href="/show_campus/" class="{% if request.path == '/show_campus/' %} active {% endif%}">Show Campus</a>
                 </li>
-                 <li><a  class="{% if request.path == job_offers_url %} active {% endif%}" href="https://forms.gle/GNAZgrH4F9HZpqhp7">Application Form</a></li>
+                {% if request.user.profile.verified or request.user.is_superuser %}
+                 <li><a  class="{% if request.path == job_offers_url %} active {% endif%}" href="https://forms.gle/GNAZgrH4F9HZpqhp7">JAF</a></li>
+                {% endif %}
                  <li>
                     <a href="{{ logout_url }}" class="{% if request.path == logout_url %} active {% endif%}">Logout</a>
                 </li>
             {%else%}
+                {% if request.user.profile.verified or request.user.is_superuser %}
                  <li>
                     <a href="{{ job_offers_url }}" class="{% if request.path == job_offers_url %} active {% endif%}">Job Offers</a>
                 </li>
+                {% endif %}
                 <li>
                     <a href="{{ profile_url }}" class="{% if request.path == profile_url %} active {% endif%}">My Profile</a>
 
@@ -131,8 +135,10 @@
                 <li>
                     <a href="/show_campus/" class="{% if request.path == '/show_campus/' %} active {% endif%}">Show Campus</a>
                 </li>
+                {% if request.user.profile.verified or request.user.is_superuser %}
                 <li><a  class="{% if request.path == '/announcement/' %} active {% endif %}" href="/announcement/">Announcements</a></li>
                 <li><a  class="{% if request.path == '/show_company/' %} active {% endif %}" href="/show_company/">Open roles</a></li>
+                {% endif %}
                 <li>
                     <a href="{{ logout_url }}" class="{% if request.path == logout_url %} active {% endif%}">Logout</a>
                 </li>

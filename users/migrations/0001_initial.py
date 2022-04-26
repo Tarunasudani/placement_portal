@@ -28,6 +28,7 @@ class Migration(migrations.Migration):
                 ('stream', models.CharField(max_length=20)),
                 ('placed_in', models.CharField(default='NoOffer', max_length=20)),
                 ('user', models.OneToOneField(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
+                ('verified', models.BooleanField(default=False))
             ],
         ),
     ]

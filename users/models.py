@@ -14,6 +14,7 @@ class Profile(models.Model):
     stream = models.CharField(max_length=20)
     placed_in = models.CharField(default='NoOffer', max_length=20)
     is_recruiter = models.BooleanField(default=False)
+    verified = models.BooleanField(default=False)
 
     def __str__(self):
         return f'{self.user.username} Profile'
