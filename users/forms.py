@@ -38,8 +38,24 @@ class ProfileUpdateForm(forms.ModelForm):
         model = Profile
         fields = ['first_name','last_name','id_no','phone_no','cgpa','degree','stream','image']
 
+class ProfileUpdateFormRecruiter(forms.ModelForm):
+    first_name = forms.CharField(label='First name', max_length=20)
+    last_name = forms.CharField(label='Last name', max_length=20)
+
+    phone_no = forms.CharField(label='Phone No.', max_length=20)
+
+    class Meta:
+        model = Profile
+        fields = ['first_name','last_name','phone_no','image']
+
 class ProfileViewForm(forms.ModelForm):
     placed_in = forms.CharField(label='Job Offered In...(you can not change this field)', max_length=20)
     class Meta:
         model = Profile
         fields = ['placed_in']
+
+class ProfileViewFormRecruiter(forms.ModelForm):
+
+    class Meta:
+        model = Profile
+        fields = ['is_recruiter']
