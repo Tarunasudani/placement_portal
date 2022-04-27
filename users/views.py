@@ -15,7 +15,7 @@ def show_users(request):
     all_users = Profile.objects.all()
     offer = []
     for i in range(len(all_users)):
-        if all_users[i].placed_in != 'NoOffer':
+        if all_users[i].placed_in != 'NoOffer' and all_users[i].verified and all_users[i].is_recruiter == False:
             offer.append(all_users[i])
 
     return render(request, "placement/show_offers.html", {'offers': offer})

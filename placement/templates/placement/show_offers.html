@@ -34,12 +34,13 @@ tr:nth-child(even) {
             <th id = "titles">Placed At</th>
         </tr>
     {% for offer in offers %}
+           {% if offer.placed_in != 'NA' and offer.placed_in != 'na'  %}
             <tr>
                 <th>{{offer.first_name}}</th>
                 <th>{{offer.last_name}}</th>
                 <th>{{offer.placed_in}}</th>
             </tr>
-
+            {%endif%}
     {% endfor %}
     </div>
 </article>
