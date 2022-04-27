@@ -17,7 +17,7 @@
   <p class="text-secondary">{{ user.email }}</p>
   </div>
   <div class="col-md-4">
-    <div class="stu"><a onclick="myFunction()" href="" id="goto" class="button_card">Delete Account</a></div>
+    <!-- <div class="stu"><a onclick="myFunction()" href="" id="goto" class="button_card">Delete Account</a></div> -->
              {% if request.user.profile.is_recruiter == False %}
             <h6><a href="{% url 'your_app'%}" class="button_card" >Your Applications</a></h6>
             {% endif%}
@@ -34,7 +34,8 @@
               {{ v_form|crispy }}
           </fieldset>
           <div class="form-group">
-              <button class="button_update" type="submit">Update</button>
+              <button class="button_update" type="submit">Update Profile</button>
+              <button onclick="myFunction()" href="" id="goto" class="button_update">Delete Account</button>
           </div>
       </form>
     </div>

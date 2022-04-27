@@ -1342,6 +1342,7 @@ section {
   border-radius: 5px;
   margin: 10px;
   text-align: center;
+  top: 50%;
 }
 .contact_box {
   background-color: #F0E9D2;
@@ -1669,7 +1670,7 @@ section {
 }
 
 .button_download{
-  font-size: 30px;
+  font-size: 25px;
   border: unset;
   color: #002366;
   cursor: pointer;
@@ -1689,7 +1690,27 @@ section {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.button_link{
+  font-size: 25px;
+  border: unset;
+  color: #002366;
+  cursor: pointer;
+  /* box-shadow: 0 0 2px #000; */
+  outline: 0;
+  position: relative;
+  align-items: center;
+  padding: 2px;
+  margin-right: 5px;
+} 
+.button_link:before{
+  content: "\f0c1";
+  display: inline-block;
+  font: normal normal normal 54px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 #forms{
   margin-top: 20px;
 }
@@ -1742,7 +1763,7 @@ section {
   border-radius: 10px;
 }
 .button_update {
-  font-size: 30px;
+  font-size: 20px;
   padding: 5px 10px;
   background: #416d9b;
   border: unset;
@@ -1753,7 +1774,7 @@ section {
   position: relative;
   margin: 10px;
   border-radius: 10px;
-  left: 50%;
+  /* left: ; */
 }
 .button_card {
   font-size: 20px;

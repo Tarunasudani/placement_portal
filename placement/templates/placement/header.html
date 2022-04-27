@@ -113,9 +113,9 @@
                     <a href="{{ profile_url }}" class="{% if request.path == profile_url %} active {% endif%}">My Profile</a>
 
                 </li>
-                <li>
+                <!-- <li>
                     <a href="/show_campus/" class="{% if request.path == '/show_campus/' %} active {% endif%}">Show Campus</a>
-                </li>
+                </li> -->
                 {% if request.user.profile.verified or request.user.is_superuser %}
                  <li><a  class="{% if request.path == job_offers_url %} active {% endif%}" href="https://forms.gle/GNAZgrH4F9HZpqhp7">JAF</a></li>
                 {% endif %}
@@ -132,9 +132,9 @@
                     <a href="{{ profile_url }}" class="{% if request.path == profile_url %} active {% endif%}">My Profile</a>
 
                 </li>
-                <li>
+                <!-- <li>
                     <a href="/show_campus/" class="{% if request.path == '/show_campus/' %} active {% endif%}">Show Campus</a>
-                </li>
+                </li> -->
                 {% if request.user.profile.verified or request.user.is_superuser %}
                 <li><a  class="{% if request.path == '/announcement/' %} active {% endif %}" href="/announcement/">Announcements</a></li>
                 <li><a  class="{% if request.path == '/show_company/' %} active {% endif %}" href="/show_company/">Open roles</a></li>
@@ -146,7 +146,7 @@
         {% else %}
             <li><a href="{{ register_url }}" class="{% if request.path == register_url %} active {% endif%}">Register</a></li>
             <li><a href=" {{ login_url }}" class="{% if request.path == login_url %} active {% endif%}">Login</a></li>
-            <li><a href="/show_campus/" class="{% if request.path == '/show_campus/' %} active {% endif%}">About</a></li>
+            <!-- <li><a href="/show_campus/" class="{% if request.path == '/show_campus/' %} active {% endif%}">About</a></li> -->
         {% endif %}
         
     </ul>
